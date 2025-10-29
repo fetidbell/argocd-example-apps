@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ignore-this-resource
+  namespace: backstage-resources
+  description: Backstage resource I want to ignore during ArgoCD sync
+spec:
+  type: dummy
+  lifecycle: non-prod
+  owner: group:default/dude
+  system: system:default/rude

@@ -4,6 +4,8 @@ metadata:
   name: ignore-this-resource
   namespace: backstage-resources
   description: Backstage resource I want to ignore during ArgoCD sync
+  annotations:
+    argocd.argoproj.io/hook: Skip
 spec:
   type: dummy
   lifecycle: non-prod
